@@ -1,12 +1,32 @@
-@import "/styles/mixins/colors.scss";
+@import "/styles/mixins/padding.scss";
 
 
-.text {
-    font-weight: bold;
-    font-size: 41px;
+.container {
+    @include Padding;
+    height: 100vh;
+    padding-top: 219PX;
+    background-image: url("/images/fundoWelcome.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.p {
-    font-size: 30px;
-    opacity: 0.8;
+.text {
+    h1{
+        font-weight: bold;
+        font-size: 71px;
+    }
+
+    p {
+        font-size: 30px;
+        opacity: 0.7;
+    }
+
+}
+
+
+
+.image {
+    text-align: end;
 }
