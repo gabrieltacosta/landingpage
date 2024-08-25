@@ -10,6 +10,7 @@ kind: "primary | "secondary"
 const Button = ({ title, kind }) => {
     const generationClassByKind = () => {
         if (kind === "secondary") return Styles.secondary;
+        if (kind === "full") return Styles.full;
 
         return Styles.primary;
     }
