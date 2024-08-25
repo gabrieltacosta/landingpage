@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
 
-    h1 {
+    h2 {
 
         font-size: 65px;
         font-weight: bold;
@@ -21,7 +21,7 @@
 
     }
 
-    h1,p {
+    h2,p {
         width: 900px;
         text-align: center;
     }
@@ -40,7 +40,7 @@
     background-color: $white-color;
     border-radius: 5px;
 
-    h1 {
+    h2 {
         font-weight: bold;
         font-size: 41px;
         color: $purple2-color;
