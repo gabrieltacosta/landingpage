@@ -1,0 +1,15 @@
+@import "/styles/mixins/colors.scss";
+@import "/styles/mixins/padding.scss";
+
+.container {
+    @include Padding;
+    color: $white-color;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    width: 100%;
+    background-color: $purple-color;
+}
+
+.p {
+    text-align: center;
+}
