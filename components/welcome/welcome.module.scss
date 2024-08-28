@@ -20,6 +20,17 @@
         padding-top: 1rem;
         padding-bottom: 4rem;
     }
+
+    @include Tablet {
+        height: 100%;
+        margin-bottom: 4rem;
+        padding-top: 4rem;
+    }
+
+    @include Laptop {
+        height: 100%;
+        padding-top: 6rem;
+    }
 }
 
 .text {
@@ -50,5 +61,13 @@
         text-align: center;
         grid-column: 1;
         grid-row: 1;
+    }
+
+    @include Tablet {
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 }
