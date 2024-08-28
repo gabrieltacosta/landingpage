@@ -44,7 +44,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className={Styles.allRightReserved}>
-            ©2022 AGENCIA - Todos os direitos reservados.
+            &copy; {new Date().getFullYear()} AGENCIA - Todos os direitos reservados.
             </div>
         </div>
     )
