@@ -1,5 +1,6 @@
 @import "/styles/mixins/colors.scss";
 @import "/styles/mixins/padding.scss";
+@import "/styles/mixins/responsive.scss";
 
 .container {
     @include Padding;
@@ -13,6 +14,11 @@
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: space-between;
+
+    @include Phone {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
 }
 
 .menu {
@@ -21,7 +27,15 @@
     a + a {
         margin-left: 38.9px;
     }
+
+    @include Phone {
+        display: none;
+    }
 }
 .action {
     text-align: end;
+
+    @include Phone {
+        display: none;
+    }
 }
